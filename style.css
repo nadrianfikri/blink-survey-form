@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: poppins, sans-serif;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(https://artist.ygfamily.co.kr/ARTISTS/BLACKPINK/concert/the-show/img/bpimg.png);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+}
+.container {
+  width: 100%;
+  margin: 3rem auto 0 auto;
+}
+.textCenter {
+  text-align: center;
+}
+header h1 {
+  font-weight: 400;
+  line-height: 1;
+  text-transform: capitalize;
+}
+.pink {
+  color: pink;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #000;
+}
+header p {
+  font-size: 1.1rem;
+}
+form {
+  width: 100%;
+  margin: 2rem auto 0 auto;
+  padding: 1rem;
+  background-color: rgba(200, 90, 125, 0.2);
+  border-radius: 5px;
+}
+@media (min-width: 540px) {
+  form {
+    width: 60%;
+  }
+}
+.form-group {
+  /*   border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  font-size: 1.1rem;
+}
+.form-group p {
+  margin: 0;
+}
+.form-control {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 1.1rem;
+  color: grey;
+}
+.clue {
+  font-size: 0.8rem;
+}
+
+button {
+  background: black;
+  color: pink !important;
+  border: 1px solid black !important;
+  cursor: pointer;
+}

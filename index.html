@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://i0.wp.com/blackpinkupdate.com/wp-content/uploads/2020/06/BLACKPINK-Logo-Pink-PNG.jpg?resize=768%2C303&ssl=1" type="image/x-icon" />
+    <title>Blink Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="textCenter"><span class="pink">Blink</span> survey form</h1>
+        <p id="description" class="textCenter">Thank you for taking the time for help us to improve performance</p>
+      </header>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age <span class="clue">(optional)</span></label>
+          <input type="number" name="age" min="1" max="99" id="number" class="form-control" placeholder="Age" />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option value="select curent role" disabled selected>Select current role</option>
+            <option value="student">Student</option>
+            <option value="fulltime-job">Full Time Job</option>
+            <option value="fulltime-learner">Full Time Learner</option>
+            <option value="prefer not to say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend <span class="pink">blackpink</span> to a friend?</p>
+          <label> <input name="user-recommend" value="definitely" type="radio" class="input-radio form-control" checked />Definitely </label>
+          <label> <input name="user-recommend" value="maybe" type="radio" class="input-radio form-control" />Maybe </label>
+          <label> <input name="user-recommend" value="notsure" type="radio" class="input-radio form-control" />Not Sure </label>
+        </div>
+        <div class="form-group">
+          <p>Who is your bias in <span class="pink">blackpink</span>?</p>
+          <select name="bias" id="dropdown" class="form-control" required>
+            <option value="selectBias" disabled selected>Select your bias</option>
+            <option value="jennie">Jennie Kim</option>
+            <option value="lisa">Lalisa Manoban</option>
+            <option value="jisoo">Kim Ji Soo</option>
+            <option value="rose">Rose</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>What's your favorite song? <span class="clue">(Check all that apply)</span></p>
+          <label for="boombayah"> <input type="checkbox" name="favorite-song" value="boombayah" class="form-control" checked />Boombayah </label>
+          <label for="lovesick girl"> <input type="checkbox" name="favorite-song" value="lovesick girl" class="form-control" />Lovesick Girl </label>
+          <label for="kill this love"> <input type="checkbox" name="favorite-song" value="kill this love" class="form-control" />Kill This Love </label>
+          <label for="icecream"> <input type="checkbox" name="favorite-song" value="icecream" class="form-control" />Ice Cream Feat Selena Gomez </label>
+          <label for="how you like that"> <input type="checkbox" name="favorite-song" value="how you like that" class="form-control" />How You Like That </label>
+          <label for="pretty savage"> <input type="checkbox" name="favorite-song" value="pretty savage" class="form-control" />Pretty Savage </label>
+          <label for="ddu du"> <input type="checkbox" name="favorite-song" value="ddu du" class="form-control" />Ddu-Du Ddu-Du </label>
+        </div>
+        <div class="form-group">
+          <label for="comments" id="comment-label">Any comments or suggestions?</label>
+          <textarea name="comments" id="comments" class="input-textarea form-control" cols="30" rows="7" placeholder="Enter your comment here..." required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button form-control">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
